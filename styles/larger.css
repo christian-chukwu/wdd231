@@ -125,13 +125,13 @@
   .course-filters button.active {
     background-color: var(--accent-high-contrast);
     color: var(--accent-high-contrast-text);
-    border-color: var(--accent-high-contrast);
+    border-color: var(--text-light);
   }
 
   .course-filters button:hover {
     background-color: var(--accent-high-contrast);
     color: var(--accent-high-contrast-text);
-    border-color: var(--accent-high-contrast);
+    border-color: var(--text-light);
   }
 
   /* Make the courses-section title match other section titles (About Me / Student Photo) */
@@ -174,7 +174,7 @@
     background-color: var(--completed-color-compliant);
     color: var(--completed-text-color);
     /* ensure high contrast */
-    border-color: var(--completed-color-compliant);
+    border-color: var(--text-light);
   }
 
   .course-card.completed h3,
