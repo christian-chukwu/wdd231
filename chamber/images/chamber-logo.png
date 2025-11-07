@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="60" cy="60" r="58" fill="#003366"/>
+    <path d="M30 40 H90 L60 20 Z" fill="#E67E22"/>
+    <rect x="35" y="40" width="50" height="40" fill="#E67E22"/>
+    <path d="M40 90 L80 90 L60 70 Z" fill="#2ECC71"/>
+    <text x="60" y="65" text-anchor="middle" fill="white" font-size="14">ABIDJAN</text>
+    <text x="60" y="80" text-anchor="middle" fill="white" font-size="10">CHAMBER</text>
+</svg>
