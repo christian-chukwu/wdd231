@@ -9,6 +9,11 @@
   --background-light: #F5F5F5;
   --card-background: #FFFFFF;
   --border-color: #DDDDDD;
+  --gold-color: #d4af37;
+  --silver-color: #c0c0c0;
+  --bronze-color: #cd7f32;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --overlay-light: rgba(255, 255, 255, 0.1);
 }
 
 /* Global Styles */
@@ -133,7 +138,7 @@ nav a.active {
 
 .member-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .member-image {
@@ -160,22 +165,21 @@ nav a.active {
 }
 
 .membership-gold {
-  background: #d4af37;
+  background: var(--gold-color);
   /* gold */
-  color: #000;
+  color: var(--text-dark);
 }
 
 .membership-silver {
-  background: #c0c0c0;
+  background: var(--silver-color);
   /* silver */
-  color: #000;
+  color: var(--text-dark);
 }
 
 .membership-bronze {
-  background: #cd7f32;
+  background: var(--bronze-color);
   /* bronze */
-  /* black text improves contrast on this mid-tone bronze */
-  color: #000;
+  color: var(--text-dark);
 }
 
 /* Footer Styles */
@@ -216,7 +220,7 @@ footer {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--overlay-light);
   border-radius: 50%;
   transition: all 0.3s ease;
 }
