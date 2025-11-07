@@ -1,0 +1,85 @@
+{
+  "members": [
+    {
+      "name": "Caszmeds Pharmacy",
+      "address": "123 Health Street, Abidjan",
+      "phone": "+225 07 1463 0132",
+      "website": "https://caszmeds.com",
+      "image": "store.jpg",
+      "membershipLevel": 3,
+      "description": "Your trusted neighborhood pharmacy providing quality healthcare solutions."
+    },
+    {
+      "name": "Ivory Tech Solutions",
+      "address": "45 Digital Avenue, Abidjan",
+      "phone": "+225 07 2345 6789",
+      "website": "https://ivorytech.ci",
+      "image": "ivoryytech.jpg",
+      "membershipLevel": 3,
+      "description": "Leading IT solutions provider in Côte d'Ivoire."
+    },
+    {
+      "name": "Cocoa Trade International",
+      "address": "78 Export Road, Abidjan Port",
+      "phone": "+225 07 8901 2345",
+      "website": "https://cocoatrade.ci",
+      "image": "cocoa.jpg",
+      "membershipLevel": 2,
+      "description": "Premium cocoa export and trading company."
+    },
+    {
+      "name": "Abidjan Fresh Markets",
+      "address": "156 Market Square, Plateau",
+      "phone": "+225 07 3456 7890",
+      "website": "https://abidjanfresh.ci",
+      "image": "fresh.jpeg",
+      "membershipLevel": 1,
+      "description": "Fresh local produce and international goods."
+    },
+    {
+      "name": "Coastal Shipping LLC",
+      "address": "89 Port Boulevard, Zone 4",
+      "phone": "+225 07 5678 9012",
+      "website": "https://coastalshipping.ci",
+      "image": "shipping.jpeg",
+      "membershipLevel": 2,
+      "description": "International shipping and logistics services."
+    },
+    {
+      "name": "Safari Tours & Travel",
+      "address": "234 Tourism Road, Cocody",
+      "phone": "+225 07 6789 0123",
+      "website": "https://safaritours.ci",
+      "image": "safari.jpg",
+      "membershipLevel": 1,
+      "description": "Experience the beauty of Côte d'Ivoire."
+    },
+    {
+      "name": "Ivory Bank",
+      "address": "567 Financial District, Plateau",
+      "phone": "+225 07 8901 2345",
+      "website": "https://ivorybank.ci",
+      "image": "bannk.jpg",
+      "membershipLevel": 3,
+      "description": "Your trusted financial partner in West Africa."
+    },
+    {
+      "name": "Plateau Bistro",
+      "address": "12 Bistro Lane, Plateau",
+      "phone": "+225 07 1111 2222",
+      "website": "https://plateaubistro.ci",
+      "image": "plateau.webp",
+      "membershipLevel": 2,
+      "description": "Cozy bistro offering local and international dishes."
+    },
+    {
+      "name": "EcoPower CI",
+      "address": "90 Energy Park, Cocody",
+      "phone": "+225 07 3333 4444",
+      "website": "https://ecopower.ci",
+      "image": "eccop.webp",
+      "membershipLevel": 1,
+      "description": "Renewable energy solutions for commercial and residential projects."
+    }
+  ]
+}

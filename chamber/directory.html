@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Directory of Chamber of Commerce members in Abidjan, featuring local businesses and services">
+  <meta name="author" content="Christian Chukwu">
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Abidjan Chamber of Commerce Directory">
+  <meta property="og:description"
+    content="Directory of Chamber of Commerce members in Abidjan, featuring local businesses and services">
+  <meta property="og:image" content="images/chamber-logo.png">
+  <meta property="og:url" content="https://christian-chukwu.github.io/wdd231/chamber/directory.html">
+
+  <title>Directory | Abidjan Chamber of Commerce</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <meta name="theme-color" content="#003366">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="images/chamber__logo.png" alt="Abidjan Chamber of Commerce Logo" class="logo">
+        <h1>Abidjan Chamber of Commerce</h1>
+
+      </div>
+      <button id="menu-button" aria-label="Toggle Menu">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html" class="active">Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="directory">
+    <h2>Business Directory</h2>
+
+    <div class="view-controls">
+      <button id="grid-view" aria-label="Grid View">
+        <img src="images/grid.svg" alt="Grid View">
+      </button>
+      <button id="list-view" aria-label="List View">
+        <img src="images/list.svg" alt="List View">
+      </button>
+    </div>
+
+    <div id="members-container" class="grid-view">
+      <!-- Members will be loaded here by JavaScript -->
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>📍 45 Commerce Street, Plateau, Abidjan</p>
+        <p>📞 +225 07 1463 0132</p>
+        <p>✉️ info@abidjanchamber.ci</p>
+      </div>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/christian-chukwu-a266201b1" target="_blank" aria-label="LinkedIn">
+          <img src="images/linkedin.svg" alt="LinkedIn" width="20" height="20">
+        </a>
+        <a href="https://www.facebook.com/Casseylamine" target="_blank" aria-label="Facebook">
+          <img src="images/facebook.svg" alt="Facebook" width="20" height="20">
+        </a>
+        <a href="https://twitter.com/casseylamine" target="_blank" aria-label="Twitter">
+          <img src="images/twitter.svg" alt="Twitter" width="20" height="20">
+        </a>
+        <a href="https://wa.me/2250714630132" target="_blank" aria-label="WhatsApp">
+          <img src="images/whatsapp.svg" alt="WhatsApp" width="20" height="20">
+        </a>
+      </div>
+      <div class="development-info">
+        <p>&copy; <span id="currentYear"></span> | Christian Chukwu | WDD 231 | Abidjan Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/navigation.js"></script>
+  <script src="scripts/directory.js"></script>
+  <script src="scripts/utils.js"></script>
+</body>
+
+</html>
