@@ -1,0 +1,37 @@
+{
+  "current": {
+    "temp": 28,
+    "weather": [
+      {
+        "description": "partly cloudy",
+        "icon": "02d"
+      }
+    ]
+  },
+  "daily": [
+    {
+      "dt": 1731700800,
+      "temp": {
+        "day": 28
+      }
+    },
+    {
+      "dt": 1731787200,
+      "temp": {
+        "day": 29
+      }
+    },
+    {
+      "dt": 1731873600,
+      "temp": {
+        "day": 27
+      }
+    },
+    {
+      "dt": 1731960000,
+      "temp": {
+        "day": 28
+      }
+    }
+  ]
+}

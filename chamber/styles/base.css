@@ -271,3 +271,125 @@ footer {
     text-align: center;
   }
 }
+
+/* Home page hero, events, weather, and spotlight styles */
+.hero {
+  position: relative;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.hero .hero-image {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6);
+}
+
+.hero .hero-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  color: var(--text-light);
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.cta-button:hover {
+  background-color: var(--secondary-dark);
+}
+
+.home-grid {
+  max-width: 1200px;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.events,
+.weather,
+.spotlights {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.events ul {
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.weather .current {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.weather .forecast {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.forecast .day {
+  background: var(--background-light);
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+  min-width: 84px;
+}
+
+.spotlight-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.spotlight-card {
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: linear-gradient(180deg, var(--card-background), #fafafa);
+  border: 1px solid var(--border-color);
+}
+
+.spotlight-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.spotlight-card h4 {
+  margin: 0.5rem 0;
+  color: var(--primary-color);
+}
+
+@media screen and (min-width: 769px) {
+  .home-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .hero .hero-image {
+    height: 420px;
+  }
+}
