@@ -9,9 +9,9 @@
   --background-light: #F5F5F5;
   --card-background: #FFFFFF;
   --border-color: #DDDDDD;
-  --gold-color: #d4af37;
-  --silver-color: #c0c0c0;
-  --bronze-color: #cd7f32;
+  --gold-color: none;
+  --silver-color:none;
+  --bronze-color: none;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --overlay-light: rgba(255, 255, 255, 0.1);
 }
@@ -74,7 +74,7 @@ nav a {
 nav a:hover,
 nav a.active {
   /* use a darker variant for better contrast against white text */
-  background-color: var(--secondary-dark);
+  background-color: var(--text-dark);
   border-radius: 4px;
 }
 
@@ -303,7 +303,7 @@ footer {
 
 .cta-button {
   display: inline-block;
-  background-color: var(--secondary-color);
+  background-color: var(--text-dark);
   color: var(--text-light);
   padding: 0.75rem 1.25rem;
   border-radius: 6px;
