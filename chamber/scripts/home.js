@@ -26,10 +26,22 @@ async function loadSpotlights() {
       return;
     }
 
-    // Shuffle and pick 2 or 3 randomly (prefers 3 if available)
-    const shuffled = eligible.sort(() => Math.random() - 0.5);
-    const count = Math.min(shuffled.length, Math.random() > 0.5 ? 3 : 2);
-    const pick = shuffled.slice(0, count);
+    // Prefer to show 3 spotlights when possible.
+    // Ensure 'Caszmeds' (or similar spelling) is included if present.
+    const casKey = eligible.find(m => /casz?meds?/i.test(m.name));
+
+    // Shuffle eligible list excluding casKey (we'll include casKey explicitly)
+    const others = eligible.filter(m => m !== casKey).sort(() => Math.random() - 0.5);
+
+    let pick = [];
+    // If caszmeds exists, include it first
+    if (casKey) pick.push(casKey);
+
+    // Fill remaining slots up to 3 or available count
+    const maxCount = Math.min(3, eligible.length);
+    for (let i = 0; pick.length < maxCount && i < others.length; i++) {
+      pick.push(others[i]);
+    }
 
     container.innerHTML = '';
     pick.forEach(member => {
