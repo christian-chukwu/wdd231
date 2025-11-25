@@ -6,23 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Thank You | Abidjan Chamber</title>
 
+  <meta name="author" content="Christian Chukwu">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Thank You — Abidjan Chamber of Commerce">
+  <meta property="og:description"
+    content="Thank you for applying to the Abidjan Chamber of Commerce. We'll review your submission and follow up.">
+  <meta property="og:image" content="https://christian-chukwu.github.io/wdd231/chamber/images/chamber-logo.png">
+  <meta property="og:url" content="https://christian-chukwu.github.io/wdd231/chamber/thankyou.html">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
-  <style>
-    .thanks {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 1rem;
-    }
-
-    .summary {
-      background: var(--card-background);
-      border: 1px solid var(--border-color);
-      padding: 1rem;
-      border-radius: 8px;
-    }
-  </style>
 </head>
 
 <body>
@@ -64,18 +63,8 @@
     </div>
   </footer>
 
-  <script>
-    // Parse query params and show required fields
-    const params = new URLSearchParams(location.search);
-    const set = (id, key) => document.getElementById(id).textContent = params.get(key) || '—';
-    set('r-first', 'firstName');
-    set('r-last', 'lastName');
-    set('r-email', 'email');
-    set('r-mobile', 'mobile');
-    set('r-org', 'organization');
-    set('r-ts', 'timestamp');
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
-  </script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
 </body>
 
 </html>

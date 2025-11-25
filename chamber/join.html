@@ -5,139 +5,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Join the Abidjan Chamber of Commerce — membership application form.">
+  <meta name="author" content="Christian Chukwu">
   <title>Join | Abidjan Chamber of Commerce</title>
 
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Join — Abidjan Chamber of Commerce">
+  <meta property="og:description"
+    content="Apply for membership with the Abidjan Chamber of Commerce to connect with local businesses and events.">
+  <meta property="og:image" content="https://christian-chukwu.github.io/wdd231/chamber/images/chamber-logo.png">
+  <meta property="og:url" content="https://christian-chukwu.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
   <link rel="stylesheet" href="styles/larger.css">
-
-  <style>
-    /* Small, local styles for the join page layout and animation (keeps base.css unchanged) */
-    .join-container {
-      max-width: 1100px;
-      margin: 2rem auto;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-      padding: 0 1rem;
-    }
-
-    .form-card {
-      padding: 1rem;
-      border-radius: 8px;
-      background: var(--card-background);
-      border: 1px solid var(--border-color);
-    }
-
-    .field-label {
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-
-    .field-label input,
-    .field-label select,
-    .field-label textarea {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.25rem;
-    }
-
-    .membership-cards {
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: 1fr;
-    }
-
-    .membership-card {
-      padding: 1rem;
-      border-radius: 8px;
-      background: linear-gradient(180deg, var(--card-background), #fafafa);
-      border: 1px solid var(--border-color);
-    }
-
-    .membership-card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-    }
-
-    /* Simple entrance animation for cards */
-    .membership-card {
-      opacity: 0;
-      transform: translateY(12px);
-      animation: enter 600ms ease forwards;
-    }
-
-    .membership-card:nth-child(1) {
-      animation-delay: 80ms;
-    }
-
-    .membership-card:nth-child(2) {
-      animation-delay: 200ms;
-    }
-
-    .membership-card:nth-child(3) {
-      animation-delay: 320ms;
-    }
-
-    .membership-card:nth-child(4) {
-      animation-delay: 440ms;
-    }
-
-    @keyframes enter {
-      to {
-        opacity: 1;
-        transform: none;
-      }
-    }
-
-    /* Desktop: form and cards side-by-side */
-    @media (min-width: 900px) {
-      .join-container {
-        grid-template-columns: 2fr 1fr;
-        align-items: start;
-      }
-
-      .membership-cards {
-        position: sticky;
-        top: 1.5rem;
-      }
-    }
-
-    /* Modal styles */
-    .modal-backdrop {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.5);
-      display: none;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .modal {
-      background: var(--card-background);
-      padding: 1rem;
-      border-radius: 8px;
-      max-width: 520px;
-      width: 90%;
-      border: 1px solid var(--border-color);
-    }
-
-    .modal h4 {
-      margin-top: 0;
-    }
-
-    .modal .close {
-      float: right;
-      background: none;
-      border: none;
-      font-size: 1.2rem;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -211,7 +99,7 @@
 
           <input type="hidden" name="timestamp" id="timestamp">
 
-          <div style="margin-top:1rem;">
+          <div class="form-actions">
             <input type="submit" value="Submit Application" class="cta-button">
           </div>
         </form>
@@ -274,9 +162,9 @@
     </div>
   </footer>
 
-  <script src="scripts/navigation.js"></script>
-  <script src="scripts/join.js"></script>
-  <script src="scripts/utils.js"></script>
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+  <script src="scripts/utils.js" defer></script>
 </body>
 
 </html>

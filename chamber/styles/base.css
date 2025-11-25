@@ -10,7 +10,7 @@
   --card-background: #FFFFFF;
   --border-color: #DDDDDD;
   --gold-color: none;
-  --silver-color:none;
+  --silver-color: none;
   --bronze-color: none;
   --shadow-color: rgba(0, 0, 0, 0.1);
   --overlay-light: rgba(255, 255, 255, 0.1);
@@ -392,4 +392,144 @@ footer {
   .hero .hero-image {
     height: 420px;
   }
+}
+
+/* Join page and thank-you page additions (moved from embedded styles) */
+.join-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+.form-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+}
+
+.field-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.field-label input,
+.field-label select,
+.field-label textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.form-actions {
+  margin-top: 1rem;
+}
+
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+}
+
+.membership-card {
+  padding: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(180deg, var(--card-background), #fafafa);
+  border: 1px solid var(--border-color);
+}
+
+.membership-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+/* Simple entrance animation for cards */
+.membership-card {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: enter 600ms ease forwards;
+}
+
+.membership-card:nth-child(1) {
+  animation-delay: 80ms;
+}
+
+.membership-card:nth-child(2) {
+  animation-delay: 200ms;
+}
+
+.membership-card:nth-child(3) {
+  animation-delay: 320ms;
+}
+
+.membership-card:nth-child(4) {
+  animation-delay: 440ms;
+}
+
+@keyframes enter {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Desktop: form and cards side-by-side */
+@media (min-width: 900px) {
+  .join-container {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .membership-cards {
+    position: sticky;
+    top: 1.5rem;
+  }
+}
+
+/* Modal styles */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: var(--card-background);
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 520px;
+  width: 90%;
+  border: 1px solid var(--border-color);
+}
+
+.modal h4 {
+  margin-top: 0;
+}
+
+.modal .close {
+  float: right;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+/* Thank-you page small layout */
+.thanks {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.summary {
+  background: var(--card-background);
+  border: 1px solid var(--border-color);
+  padding: 1rem;
+  border-radius: 8px;
 }
