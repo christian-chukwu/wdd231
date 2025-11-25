@@ -493,10 +493,13 @@ footer {
 .modal-backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  /* Darken backdrop to improve contrast with any overlaid text */
+  background: rgba(0, 0, 0, 0.75);
   display: none;
   align-items: center;
   justify-content: center;
+  /* Ensure any text directly placed over the backdrop is readable */
+  color: #ffffff;
 }
 
 .modal {
@@ -506,6 +509,8 @@ footer {
   max-width: 520px;
   width: 90%;
   border: 1px solid var(--border-color);
+  /* Modal content should use the site text color (override backdrop color) */
+  color: var(--text-dark);
 }
 
 .modal h4 {
