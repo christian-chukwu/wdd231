@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thank You | Abidjan Chamber</title>
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <style>
+    .thanks {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    .summary {
+      background: var(--card-background);
+      border: 1px solid var(--border-color);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="images/chamber_logo.png" alt="Abidjan Chamber of Commerce Logo" class="logo">
+        <h1>Abidjan Chamber of Commerce</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="thanks">
+    <h2>Thank you for your application</h2>
+    <p>We received your submission. Below is the information you provided for required fields.</p>
+
+    <div id="result" class="summary">
+      <p><strong>First Name:</strong> <span id="r-first"></span></p>
+      <p><strong>Last Name:</strong> <span id="r-last"></span></p>
+      <p><strong>Email:</strong> <span id="r-email"></span></p>
+      <p><strong>Mobile:</strong> <span id="r-mobile"></span></p>
+      <p><strong>Organization:</strong> <span id="r-org"></span></p>
+      <p><strong>Submitted At:</strong> <span id="r-ts"></span></p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="development-info">
+        <p>&copy; <span id="currentYear"></span> | Christian Chukwu | WDD 231 | Abidjan Chamber of Commerce</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Parse query params and show required fields
+    const params = new URLSearchParams(location.search);
+    const set = (id, key) => document.getElementById(id).textContent = params.get(key) || '—';
+    set('r-first', 'firstName');
+    set('r-last', 'lastName');
+    set('r-email', 'email');
+    set('r-mobile', 'mobile');
+    set('r-org', 'organization');
+    set('r-ts', 'timestamp');
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>

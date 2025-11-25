@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Join the Abidjan Chamber of Commerce — membership application form.">
+  <title>Join | Abidjan Chamber of Commerce</title>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <style>
+    /* Small, local styles for the join page layout and animation (keeps base.css unchanged) */
+    .join-container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 0 1rem;
+    }
+
+    .form-card {
+      padding: 1rem;
+      border-radius: 8px;
+      background: var(--card-background);
+      border: 1px solid var(--border-color);
+    }
+
+    .field-label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    .field-label input,
+    .field-label select,
+    .field-label textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+    }
+
+    .membership-cards {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr;
+    }
+
+    .membership-card {
+      padding: 1rem;
+      border-radius: 8px;
+      background: linear-gradient(180deg, var(--card-background), #fafafa);
+      border: 1px solid var(--border-color);
+    }
+
+    .membership-card a {
+      display: inline-block;
+      margin-top: 0.5rem;
+    }
+
+    /* Simple entrance animation for cards */
+    .membership-card {
+      opacity: 0;
+      transform: translateY(12px);
+      animation: enter 600ms ease forwards;
+    }
+
+    .membership-card:nth-child(1) {
+      animation-delay: 80ms;
+    }
+
+    .membership-card:nth-child(2) {
+      animation-delay: 200ms;
+    }
+
+    .membership-card:nth-child(3) {
+      animation-delay: 320ms;
+    }
+
+    .membership-card:nth-child(4) {
+      animation-delay: 440ms;
+    }
+
+    @keyframes enter {
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    /* Desktop: form and cards side-by-side */
+    @media (min-width: 900px) {
+      .join-container {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+      }
+
+      .membership-cards {
+        position: sticky;
+        top: 1.5rem;
+      }
+    }
+
+    /* Modal styles */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal {
+      background: var(--card-background);
+      padding: 1rem;
+      border-radius: 8px;
+      max-width: 520px;
+      width: 90%;
+      border: 1px solid var(--border-color);
+    }
+
+    .modal h4 {
+      margin-top: 0;
+    }
+
+    .modal .close {
+      float: right;
+      background: none;
+      border: none;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo-container">
+        <img src="images/chamber_logo.png" alt="Abidjan Chamber of Commerce Logo" class="logo">
+        <h1>Abidjan Chamber of Commerce</h1>
+      </div>
+      <button id="menu-button" aria-label="Toggle Menu">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="join.html" class="active">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="join-container">
+      <section class="form-card form-card--main">
+        <h2>Membership Application</h2>
+        <p>Complete the form to apply for Chamber membership. Required fields are marked.</p>
+
+        <form id="joinForm" class="form-card" method="get" action="thankyou.html">
+          <label class="field-label">First Name
+            <input type="text" name="firstName" id="firstName" title="Applicant first name" autocomplete="given-name"
+              required>
+          </label>
+
+          <label class="field-label">Last Name
+            <input type="text" name="lastName" id="lastName" title="Applicant last name" autocomplete="family-name"
+              required>
+          </label>
+
+          <label class="field-label">Organization Title
+            <input type="text" name="orgTitle" id="orgTitle" title="Applicant organizational title"
+              autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" placeholder="e.g. Regional Manager">
+          </label>
+
+          <label class="field-label">Email
+            <input type="email" name="email" id="email" title="Email address" autocomplete="email"
+              placeholder="name@example.com" required>
+          </label>
+
+          <label class="field-label">Mobile Phone
+            <input type="tel" name="mobile" id="mobile" title="Mobile phone number" autocomplete="tel" required>
+          </label>
+
+          <label class="field-label">Business / Organization Name
+            <input type="text" name="organization" id="organization" title="Business or organization name"
+              autocomplete="organization" required>
+          </label>
+
+          <label class="field-label">Membership Level
+            <select name="membership" id="membership" required>
+              <option value="np">NP Membership (Non-profit - no fee)</option>
+              <option value="bronze">Bronze</option>
+              <option value="silver">Silver</option>
+              <option value="gold">Gold</option>
+            </select>
+          </label>
+
+          <label class="field-label">Organization Description
+            <textarea name="description" id="description" title="Business description" rows="4"></textarea>
+          </label>
+
+          <input type="hidden" name="timestamp" id="timestamp">
+
+          <div style="margin-top:1rem;">
+            <input type="submit" value="Submit Application" class="cta-button">
+          </div>
+        </form>
+      </section>
+
+      <aside class="membership-cards">
+        <div class="membership-card" id="card-np">
+          <h3>NP Membership</h3>
+          <p>Non-profit membership (no fee). Priority to community organizations.</p>
+          <a href="#" data-modal="modal-np">More info</a>
+        </div>
+
+        <div class="membership-card" id="card-bronze">
+          <h3>Bronze Membership</h3>
+          <p>Basic directory listing and event notifications.</p>
+          <a href="#" data-modal="modal-bronze">More info</a>
+        </div>
+
+        <div class="membership-card" id="card-silver">
+          <h3>Silver Membership</h3>
+          <p>Directory listing, event access, occasional spotlights and discounts.</p>
+          <a href="#" data-modal="modal-silver">More info</a>
+        </div>
+
+        <div class="membership-card" id="card-gold">
+          <h3>Gold Membership</h3>
+          <p>Priority listing, spotlight features, and expanded promotional benefits.</p>
+          <a href="#" data-modal="modal-gold">More info</a>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Modals -->
+  <div id="modal-backdrop" class="modal-backdrop" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true">
+      <button class="close" id="modal-close" aria-label="Close">×</button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>📍 45 Commerce Street, Plateau, Abidjan</p>
+        <p>📞 +225 07 1463 0132</p>
+        <p>✉️ info@abidjanchamber.ci</p>
+      </div>
+      <div class="social">
+        <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" width="20" height="20"></a>
+        <a href="#" aria-label="Facebook"><img src="images/facebook.svg" width="20" height="20"></a>
+        <a href="#" aria-label="Twitter"><img src="images/twitter.svg" width="20" height="20"></a>
+        <a href="#" aria-label="WhatsApp"><img src="images/whatsapp.svg" width="20" height="20"></a>
+      </div>
+      <div class="development-info">
+        <p>&copy; <span id="currentYear"></span> | Christian Chukwu | WDD 231 | Abidjan Chamber of Commerce</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/navigation.js"></script>
+  <script src="scripts/join.js"></script>
+  <script src="scripts/utils.js"></script>
+</body>
+
+</html>
