@@ -4,16 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thank You | Abidjan Chamber</title>
+  <title>Discover | Abidjan Chamber</title>
 
   <meta name="author" content="Christian Chukwu">
-  <!-- Open Graph -->
-  <meta property="og:title" content="Thank You — Abidjan Chamber of Commerce">
+  <meta property="og:title" content="Discover — Abidjan Chamber of Commerce">
   <meta property="og:description"
-    content="Thank you for applying to the Abidjan Chamber of Commerce. We'll review your submission and follow up.">
-  <meta property="og:image" content="https://christian-chukwu.github.io/wdd231/chamber/images/chamber-logo.png">
-  <meta property="og:url" content="https://christian-chukwu.github.io/wdd231/chamber/thankyou.html">
-  <meta property="og:type" content="website">
+    content="Explore the attractions and features of Abidjan — places to visit and businesses to discover.">
+  <meta property="og:image" content="https://christian-chukwu.github.io/wdd231/chamber/images/chamber_logo.png">
+  <meta property="og:url" content="https://christian-chukwu.github.io/wdd231/chamber/discover.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +19,7 @@
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
-  <link rel="stylesheet" href="styles/larger.css">
+
 </head>
 
 <body>
@@ -31,28 +29,31 @@
         <img src="images/chamber_logo.png" alt="Abidjan Chamber of Commerce Logo" class="logo">
         <h1>Abidjan Chamber of Commerce</h1>
       </div>
+      <button id="menu-button" aria-label="Toggle Menu">☰</button>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="directory.html">Directory</a></li>
-          <li><a href="join.html" class="active">Join</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="thanks">
-    <h2>Thank you for your application</h2>
-    <p>We received your submission. Below is the information you provided for required fields.</p>
+  <main class="discover-page">
+    <section class="intro">
+      <h2>Discover Abidjan</h2>
+      <p>Explore local parks, markets, cultural sites, and businesses that make our region unique. Use this guide to
+        find places to visit, shop, and connect with the community.</p>
+    </section>
 
-    <div id="result" class="summary">
-      <p><strong>First Name:</strong> <span id="r-first"></span></p>
-      <p><strong>Last Name:</strong> <span id="r-last"></span></p>
-      <p><strong>Email:</strong> <span id="r-email"></span></p>
-      <p><strong>Mobile:</strong> <span id="r-mobile"></span></p>
-      <p><strong>Organization:</strong> <span id="r-org"></span></p>
-      <p><strong>Submitted At:</strong> <span id="r-ts"></span></p>
-    </div>
+    <section id="visit-message" class="visit-message" aria-live="polite"></section>
+
+    <section id="discover-grid" class="discover-grid" aria-live="polite">
+      <!-- Cards loaded by scripts/discover.js -->
+    </section>
   </main>
 
   <footer>
@@ -86,8 +87,9 @@
 
   <script src="scripts/config.js"></script>
   <script src="scripts/navigation.js"></script>
-  <script src="scripts/thankyou.js"></script>
   <script src="scripts/utils.js"></script>
+  <script type="module" src="scripts/discover.js"></script>
+
 </body>
 
 </html>
