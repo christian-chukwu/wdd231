@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Plan — Bilingual Learning Hub</title>
+  <meta name="description"
+    content="Site plan for Bilingual Learning Hub: a resource for learning English and French with interactive exercises and cultural content.">
+  <meta name="author" content="Christian Chukwu">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="chamber/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="chamber/images/favicon-16x16.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu+Mono:wght@400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="chamber/styles/normalize.css">
+  <link rel="stylesheet" href="chamber/styles/base.css">
+
+  <style>
+    /* Siteplan specific styles using CSS variables from base.css */
+    body {
+      background-color: var(--background-light);
+      color: var(--text-dark);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      padding: 2rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Merriweather', serif;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      font-style: italic;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      background-color: var(--card-background);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px var(--shadow-color);
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 2px solid var(--accent-color);
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-family: 'Merriweather', serif;
+      color: var(--primary-color);
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    h3 {
+      font-family: 'Ubuntu Mono', monospace;
+      color: var(--secondary-color);
+      font-size: 1.2rem;
+      margin-top: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    ul,
+    ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    .color-scheme {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .color-box {
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 2px solid var(--border-color);
+      text-align: center;
+      background-color: var(--card-background);
+    }
+
+    .color-sample {
+      width: 100%;
+      height: 100px;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      border: 1px solid var(--border-color);
+    }
+
+    .color-primary {
+      background-color: var(--primary-color);
+    }
+
+    .color-secondary {
+      background-color: var(--secondary-color);
+    }
+
+    .color-accent {
+      background-color: var(--accent-color);
+    }
+
+    .color-text-light {
+      background-color: var(--card-background);
+      border: 1px solid var(--text-dark);
+    }
+
+    .typography-example {
+      background-color: var(--background-light);
+      padding: 1rem;
+      border-left: 4px solid var(--secondary-color);
+      margin-bottom: 1rem;
+      border-radius: 4px;
+    }
+
+    .font-heading {
+      font-family: 'Merriweather', serif;
+      font-size: 1.5rem;
+      color: inherit;
+      margin-bottom: 0.5rem;
+    }
+
+    .font-body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      color: var(--text-dark);
+    }
+
+    .font-code {
+      font-family: 'Ubuntu Mono', monospace;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      background: var(--background-light);
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+
+    .wireframe-container {
+      margin: 1.5rem 0;
+    }
+
+    .wireframe {
+      /* Plain wireframe: no colors or decorative borders per request */
+      background: none;
+      border: none;
+      padding: 0;
+      border-radius: 0;
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    .wireframe h4 {
+      font-family: 'Merriweather', serif;
+      color: inherit;
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .wireframe-item {
+      background: none;
+      padding: 0.25rem 0;
+      margin: 0.25rem 0;
+      border-radius: 0;
+      color: inherit;
+      font-size: 0.95rem;
+    }
+
+    .scenario-item {
+      background-color: var(--background-light);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid var(--secondary-color);
+      border-radius: 4px;
+    }
+
+    .scenario-item strong {
+      color: var(--primary-color);
+    }
+
+    footer {
+      background-color: var(--primary-color);
+      color: var(--text-light);
+      text-align: center;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--secondary-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .color-scheme {
+        grid-template-columns: 1fr;
+      }
+
+      body {
+        padding: 0.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Bilingual Learning Hub</h1>
+
+  </header>
+
+  <main>
+    <!-- Site Name Section -->
+    <section id="site-name">
+      <h2>Site Name</h2>
+      <h3>Project Name: Bilingual Learning Hub</h3>
+      <p>
+        Bilingual Learning Hub : This name reflects the mission to support learners in both English and French. It
+        emphasizes
+        connection, growth, and accessibility across cultures.
+      </p>
+    </section>
+
+    <!-- Site Purpose Section -->
+    <section id="site-purpose">
+      <h2>Site Purpose</h2>
+      <p>
+        The Bilingual Learning Hub is designed to provide a comprehensive, accessible, and engaging platform for
+        language learners at all levels. This website is a bilingual learning resource designed to help users improve
+        their English and French skills. It will
+        include vocabulary, grammar, pronunciation, cultural tips, and interactive tools using modern web technologies.
+        The website will offer:
+      </p>
+      <ul>
+        <li><strong>English Learning Resources:</strong> Vocabulary lists, grammar fundamentals, and interactive
+          practice exercises to help learners strengthen their English language skills.</li>
+        <li><strong>French Learning Resources:</strong> Common phrases, pronunciation guides, cultural expressions, and
+          context-based lessons to support learners in French-speaking environments.</li>
+        <li><strong>Cultural Integration:</strong> Content that bridges language learning with cultural understanding,
+          emphasizing the connection between language and culture.</li>
+        <li><strong>Interactive Features:</strong> Dynamic content powered by JSON data and browser APIs, including
+          vocabulary quizzes, translation utilities, and cultural fact displays.</li>
+        <li><strong>Accessibility and Usability:</strong> A responsive, keyboard-navigable design that serves learners
+          on all devices and with varying accessibility needs.</li>
+      </ul>
+    </section>
+
+    <!-- Scenarios Section -->
+    <section id="scenarios">
+      <h2> Scenarios</h2>
+      <p>The following scenarios represent typical questions and needs of our target audience:</p>
+
+      <div class="scenario-item">
+        <strong>Scenario 1: "I want to improve my English vocabulary for professional settings."</strong>
+
+      </div>
+
+      <div class="scenario-item">
+        <strong>Scenario 2: "I need practical French phrases for daily life in a French-speaking country."</strong>
+      </div>
+
+      <div class="scenario-item">
+        <strong>Scenario 3: "How can I understand the cultural context behind these expressions?"</strong>
+      </div>
+
+      <div class="scenario-item">
+        <strong>Scenario 4: "I want to test my knowledge and track my progress."</strong>
+      </div>
+    </section>
+
+    <!-- Color Scheme Section -->
+    <section id="color-scheme">
+      <h2>Color Scheme</h2>
+      <p>The color scheme for the Bilingual Learning Hub is derived from the Chamber of Commerce project CSS variables:
+      </p>
+
+      <div class="color-scheme">
+        <div class="color-box">
+          <div class="color-sample color-primary"></div>
+          <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Primary Color</h4>
+          <p><strong>#003366</strong> (Dark Blue)</p>
+          <p><small>Usage: Header, footer, main headings (h1, h2), buttons, active navigation links</small></p>
+        </div>
+
+        <div class="color-box">
+          <div class="color-sample color-secondary"></div>
+          <h4 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Secondary Color</h4>
+          <p><strong>#E67E22</strong> (Orange)</p>
+          <p><small>Usage: Subheadings (h3, h4), accent borders, hover states, links</small></p>
+        </div>
+
+        <div class="color-box">
+          <div class="color-sample color-accent"></div>
+          <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Accent Color</h4>
+          <p><strong>#2ECC71</strong> (Green)</p>
+          <p><small>Usage: Highlights, backgrounds for featured content, cards, section dividers</small></p>
+        </div>
+
+        <div class="color-box">
+          <div class="color-sample color-text-light"></div>
+          <h4 style="color: var(--text-dark); margin-bottom: 0.5rem;">Background & Text</h4>
+          <p><strong>#FFFFFF</strong> (White) & <strong>#333333</strong> (Dark Gray)</p>
+          <p><small>Usage: Main background, body text, ensuring high contrast and readability</small></p>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- Typography Section -->
+    <section id="typography">
+      <h2>Typography</h2>
+
+      <div class="typography-example">
+        <div class="font-heading">Merriweather (Serif) : Headings</div>
+      </div>
+
+      <div class="typography-example">
+        <div class="font-body">Roboto (Sans-Serif) : Body Text</div>
+      </div>
+      <div class="typography-example">
+        <div class="font-code">Ubuntu Mono (Monospace) : Code & Data</div>
+      </div>
+
+    </section>
+
+    <!-- Wireframe Section -->
+    <section id="wireframes">
+      <h2>Wireframes</h2>
+      <p>The wireframes shows how it appears on devices</p>
+
+      <h3>Mobile Wireframe (Small Viewport — under 768px)</h3>
+      <div class="wireframe">
+        <h4>Mobile Home Page Layout</h4>
+        <div class="wireframe-item">Header — Logo & Title</div>
+        <div class="wireframe-item">Navigation Menu (Hamburger)</div>
+        <div class="wireframe-item">Hero Section — Welcome Message</div>
+        <div class="wireframe-item">Feature Cards (Stacked Vertically)</div>
+        <div class="wireframe-item">Call-to-Action Section</div>
+        <div class="wireframe-item">Footer</div>
+      </div>
+
+      <h3>Desktop Wireframe (Large Viewport — 768px and above)</h3>
+      <div class="wireframe">
+        <h4>Desktop Home Page Layout</h4>
+        <div class="wireframe-item">Header — Logo & Title with Horizontal Navigation</div>
+        <div class="wireframe-item">Hero Section — Welcome Message with Imagery</div>
+        <div class="wireframe-item">Feature Cards (3-Column Grid)</div>
+        <div class="wireframe-item">Call-to-Action Section</div>
+        <div class="wireframe-item">Footer</div>
+      </div>
+
+      <h3>Wireframe Description</h3>
+      <ul>
+        <li><strong>Header:</strong> Contains the site logo and navigation menu. On mobile, navigation is collapsed into
+          a hamburger menu; on desktop, it displays horizontally.</li>
+        <li><strong>Hero Section:</strong> A prominent welcome area with a headline, tagline, and background image that
+          sets the tone for bilingual learning.</li>
+        <li><strong>Feature Cards:</strong> Three cards highlighting the main offerings (English Learning, French
+          Learning, Interactive Exercises). On mobile, they stack vertically; on desktop, they display in a 3-column
+          grid.</li>
+        <li><strong>Call-to-Action:</strong> A section encouraging users to get started or explore resources.</li>
+        <li><strong>Footer:</strong> Contains copyright information, links, and contact details.</li>
+      </ul>
+    </section>
+
+    <h3>Accessibility Considerations</h3>
+    <ul>
+      <li>Semantic HTML structure (header, nav, main, footer)</li>
+      <li>Color contrast ratios meeting WCAG AA standards</li>
+      <li>Test performance and SEO with Lighthouse </li>
+      <li>Responsive design for all device sizes</li>
+    </ul>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Bilingual Learning Hub | Christian Chukwu | WDD 231</p>
+    <p>Last Modified: <span id="lastModified"></span></p>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+    // Set last modified date
+    document.getElementById('lastModified').textContent = document.lastModified;
+  </script>
+</body>
+
+</html>
