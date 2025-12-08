@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Bilingual Learning Hub - Learn English and French with interactive vocabulary, phrases, and cultural resources.">
+  <meta name="author" content="Christian Chukwu">
+  <meta property="og:title" content="Bilingual Learning Hub - Master English & French">
+  <meta property="og:description"
+    content="Learn English and French with interactive vocabulary, phrases, and cultural resources. Start your bilingual journey today!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://christian-chukwu.github.io/wdd231/final/index.html">
+  <meta property="og:image" content="https://christian-chukwu.github.io/wdd231/final/images/favicon.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Bilingual Learning Hub - Master English & French">
+  <meta name="twitter:description"
+    content="Learn English and French with interactive vocabulary, phrases, and cultural resources. Start your bilingual journey today!">
+  <meta name="twitter:image" content="https://christian-chukwu.github.io/wdd231/final/images/favicon.svg">
+
+  <title>Bilingual Learning Hub - Home</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu+Mono:wght@400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-area">
+      <h1 class="site-title">Bilingual Learning Hub</h1>
+      <p class="site-tagline">Master English & French</p>
+    </div>
+
+    <button id="menu-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu">☰</button>
+  </header>
+
+  <nav id="main-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="vocabulary.html">Vocabulary</a></li>
+      <li><a href="phrases.html">Phrases</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" role="main">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Welcome to Your Language Journey</h2>
+        <p>Begin your journey of language with us.Explore interactive vocabulary, cultural phrases, and learn at your
+          own pace with our comprehensive bilingual
+          platform.</p>
+        <div class="cta-buttons">
+          <a href="vocabulary.html" class="btn btn-primary">Learn Vocabulary</a>
+          <a href="phrases.html" class="btn btn-secondary">Explore Phrases</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <h2>What You'll Learn</h2>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>📚 English Vocabulary</h3>
+          <p>Build your English vocabulary with carefully curated words, definitions, examples, and difficulty levels.
+            Perfect for learners at all levels.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>🗣️ French Phrases</h3>
+          <p>Master practical French phrases used in daily life. Learn pronunciation, context, and cultural nuances for
+            authentic communication.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>🎯 Interactive Learning</h3>
+          <p>Engage with dynamic content, save your progress, and test your knowledge with our interactive features and
+            accessibility-first design.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Quick Stats Section -->
+    <section class="stats">
+      <h2>Learning Resources</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <p class="stat-number">16+</p>
+          <p class="stat-label">Vocabulary Words</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-number">16+</p>
+          <p class="stat-label">French Phrases</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-number">2</p>
+          <p class="stat-label">Languages</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for detailed information -->
+  <dialog id="info-modal" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <h2 id="modal-title">Learn More</h2>
+      <p id="modal-body"></p>
+      <button id="modal-close" aria-label="Close modal">Close</button>
+    </div>
+  </dialog>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="currentYear"></span> Bilingual Learning Hub | Christian Chukwu | WDD 231</p>
+      <div class="social">
+        <!-- SOCIAL MEDIA ICONS -->
+        <a href="https://www.linkedin.com/in/christian-chukwu-a266201b1" target="_blank" aria-label="LinkedIn"><img
+            src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        <a href="https://www.facebook.com/Casseylamine" target="_blank" aria-label="Facebook"><img
+            src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+        <a href="https://twitter.com/casseylamine" target="_blank" aria-label="Twitter"><img src="images/twitter.svg"
+            alt="twitter" width="16" height="16"></a>
+        <a href="https://wa.me/2250714630132" target="_blank" aria-label="WhatsApp"><img src="images/whatsapp.svg"
+            alt="whatsapp" width="16" height="16"></a>
+      </div>
+      <p>
+        <a href="attributions.html">Attributions</a> |
+        <a href="https://www.loom.com/share/48923a98cd9648f2a7bf59854f2d6834" target="_blank"
+          rel="noopener noreferrer">Project Video</a>
+      </p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

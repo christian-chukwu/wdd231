@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "phrase": "Bon matin",
+    "englishTranslation": "Good morning",
+    "pronunciation": "bohn mah-TAN",
+    "context": "Greeting used in the morning",
+    "category": "Greetings"
+  },
+  {
+    "id": 2,
+    "phrase": "Comment ça va?",
+    "englishTranslation": "How are you?",
+    "pronunciation": "koh-MAHN sah vah",
+    "context": "Common greeting to ask how someone is doing",
+    "category": "Greetings"
+  },
+  {
+    "id": 3,
+    "phrase": "Enchanté(e)",
+    "englishTranslation": "Pleased to meet you",
+    "pronunciation": "ohn-shan-TAY",
+    "context": "Polite greeting when meeting someone for the first time",
+    "category": "Greetings"
+  },
+  {
+    "id": 4,
+    "phrase": "S'il vous plaît",
+    "englishTranslation": "Please (formal)",
+    "pronunciation": "see voo PLEH",
+    "context": "Formal way to say please in French",
+    "category": "Politeness"
+  },
+  {
+    "id": 5,
+    "phrase": "Merci beaucoup",
+    "englishTranslation": "Thank you very much",
+    "pronunciation": "mare-SEE boh-KOO",
+    "context": "Expression of gratitude",
+    "category": "Politeness"
+  },
+  {
+    "id": 6,
+    "phrase": "Excusez-moi",
+    "englishTranslation": "Excuse me",
+    "pronunciation": "ek-SKEW-zay-MWAH",
+    "context": "Polite way to get someone's attention",
+    "category": "Politeness"
+  },
+  {
+    "id": 7,
+    "phrase": "Je ne comprends pas",
+    "englishTranslation": "I don't understand",
+    "pronunciation": "zhuh nuh kohm-PRAHN pah",
+    "context": "Used when you don't understand something",
+    "category": "Communication"
+  },
+  {
+    "id": 8,
+    "phrase": "Parlez plus lentement",
+    "englishTranslation": "Speak more slowly",
+    "pronunciation": "par-LAY ploo LAHN-tuh-mahn",
+    "context": "Polite request for slower speech",
+    "category": "Communication"
+  },
+  {
+    "id": 9,
+    "phrase": "Quel est votre nom?",
+    "englishTranslation": "What is your name?",
+    "pronunciation": "kel eh VOH-truh nohm",
+    "context": "Formal way to ask someone's name",
+    "category": "Personal Information"
+  },
+  {
+    "id": 10,
+    "phrase": "Je m'appelle...",
+    "englishTranslation": "My name is...",
+    "pronunciation": "zhuh mah-PEL",
+    "context": "How to introduce yourself by name",
+    "category": "Personal Information"
+  },
+  {
+    "id": 11,
+    "phrase": "Où est la gare?",
+    "englishTranslation": "Where is the train station?",
+    "pronunciation": "oo eh lah gahr",
+    "context": "Asking for directions to the train station",
+    "category": "Directions"
+  },
+  {
+    "id": 12,
+    "phrase": "Combien ça coûte?",
+    "englishTranslation": "How much does it cost?",
+    "pronunciation": "kohm-BYAN sah KOOT",
+    "context": "Common question about price",
+    "category": "Shopping"
+  },
+  {
+    "id": 13,
+    "phrase": "L'addition, s'il vous plaît",
+    "englishTranslation": "The bill, please",
+    "pronunciation": "lah-dee-SYON see voo PLEH",
+    "context": "Polite request for the restaurant bill",
+    "category": "Dining"
+  },
+  {
+    "id": 14,
+    "phrase": "Bienvenue",
+    "englishTranslation": "Welcome",
+    "pronunciation": "bee-en-vuh-NEW",
+    "context": "Expression used to welcome someone",
+    "category": "Greetings"
+  },
+  {
+    "id": 15,
+    "phrase": "Bonne journée",
+    "englishTranslation": "Have a good day",
+    "pronunciation": "bun zhoor-NAY",
+    "context": "Farewell phrase used during the day",
+    "category": "Farewell"
+  },
+  {
+    "id": 16,
+    "phrase": "Au revoir",
+    "englishTranslation": "Goodbye",
+    "pronunciation": "oh ruh-VWAHR",
+    "context": "Standard way to say goodbye",
+    "category": "Farewell"
+  }
+]

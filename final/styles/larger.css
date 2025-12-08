@@ -1,0 +1,357 @@
+/* Larger Screen Styles (768px and up) */
+
+@media (min-width: 768px) {
+
+  /* Header and Navigation */
+  header {
+    align-items: center;
+  }
+
+  #menu-toggle {
+    display: none;
+  }
+
+  nav {
+    display: block !important;
+    background-color: var(--secondary-color);
+    padding: 0;
+    width: auto;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+
+  nav li {
+    margin-bottom: 0;
+  }
+
+  nav a {
+    display: inline-block;
+    border-bottom: none;
+    padding: 0.5rem 1rem;
+    color: white;
+  }
+
+  nav a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    text-decoration: none;
+  }
+
+  nav a.active {
+    background-color: rgba(255, 255, 255, 0.12);
+  }
+
+  /* Typography */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .site-title {
+    font-size: 2rem;
+  }
+
+  /* Main Content */
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 3rem 2rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-content {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+  }
+
+  /* Features Grid */
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Stats Grid */
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* Filters */
+  .filters {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 1rem;
+  }
+
+  .filter-group {
+    flex: 1;
+  }
+
+  #save-progress-btn {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  /* Vocabulary/Phrases Grid */
+  .vocab-container,
+  .phrases-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Contact Form */
+  .contact-form-section {
+    max-width: 700px;
+  }
+
+  /* Results Page */
+  .results-container {
+    max-width: 800px;
+  }
+
+  .results-container .btn {
+    width: auto;
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  /* Page Header */
+  .page-header {
+    padding: 2rem;
+  }
+
+  .page-header h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* Larger screens */
+  main {
+    padding: 0 3rem;
+  }
+
+  /* Features Grid - 3 columns on larger screens */
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* Vocabulary/Phrases - 3 column grid */
+  .vocab-container,
+  .phrases-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .vocab-item,
+  .phrase-item {
+    padding: 2rem;
+  }
+
+  /* Hero */
+  .hero {
+    padding: 4rem 2rem;
+  }
+
+  .hero h2 {
+    font-size: 3rem;
+  }
+
+  /* Statistics */
+  .stats {
+    padding: 3rem 2rem;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+}
+
+/* Landscape Mobile Adjustments */
+@media (max-height: 600px) {
+  header {
+    padding: 1rem;
+  }
+
+  .site-title {
+    font-size: 1.25rem;
+  }
+
+  .site-tagline {
+    font-size: 0.8rem;
+  }
+
+  nav a {
+    padding: 0.5rem 1rem;
+  }
+
+  .hero {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .cta-buttons {
+    gap: 0.5rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+
+  header,
+  nav,
+  footer,
+  .filters,
+  #menu-toggle {
+    display: none;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .vocab-container,
+  .phrases-container {
+    grid-template-columns: 1fr;
+  }
+
+  .vocab-item,
+  .phrase-item {
+    page-break-inside: avoid;
+  }
+
+  a {
+    color: #003366;
+    text-decoration: none;
+  }
+
+  body {
+    background-color: white;
+    color: black;
+  }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: more) {
+  body {
+    color: #000;
+  }
+
+  .feature-card,
+  .vocab-item,
+  .phrase-item {
+    border: 2px solid #000;
+  }
+
+  button {
+    border: 2px solid currentColor;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-light: #1a1a1a;
+    --card-background: #2d2d2d;
+    --text-dark: #f0f0f0;
+    --border-color: #444;
+  }
+
+  body {
+    background-color: var(--background-light);
+    color: var(--text-dark);
+  }
+
+  header,
+  nav,
+  footer {
+    background-color: #000;
+  }
+
+  .feature-card,
+  .vocab-item,
+  .phrase-item,
+  .page-header,
+  .filters,
+  .contact-form-section,
+  .results-container,
+  .stats {
+    background-color: var(--card-background);
+    border-color: var(--border-color);
+  }
+
+  input,
+  select,
+  textarea {
+    background-color: var(--card-background);
+    color: var(--text-dark);
+    border-color: var(--border-color);
+  }
+
+  dialog {
+    background-color: var(--card-background);
+    color: var(--text-dark);
+  }
+
+  .page-header {
+    background-color: #333;
+  }
+
+  .stats {
+    background-color: #333;
+  }
+
+  .stat-item {
+    background-color: var(--card-background);
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

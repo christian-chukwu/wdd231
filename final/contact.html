@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Us - Send feedback or questions to Bilingual Learning Hub">
+  <meta name="author" content="Christian Chukwu">
+  <meta property="og:title" content="Contact Us - Bilingual Learning Hub">
+  <meta property="og:description"
+    content="Get in touch with Bilingual Learning Hub. Send us your feedback, questions, or suggestions to help us improve.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://christian-chukwu.github.io/wdd231/final/contact.html">
+  <meta property="og:image" content="https://christian-chukwu.github.io/wdd231/final/images/favicon.svg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Us - Bilingual Learning Hub">
+  <meta name="twitter:description"
+    content="Get in touch with Bilingual Learning Hub. Send us your feedback, questions, or suggestions to help us improve.">
+  <meta name="twitter:image" content="https://christian-chukwu.github.io/wdd231/final/images/favicon.svg">
+
+  <title>Contact - Bilingual Learning Hub</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu+Mono:wght@400&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <script type="module" src="scripts/contact.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo-area">
+      <h1 class="site-title">Bilingual Learning Hub</h1>
+      <p class="site-tagline">Master English & French</p>
+    </div>
+
+    <button id="menu-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu">☰</button>
+  </header>
+
+  <nav id="main-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="vocabulary.html">Vocabulary</a></li>
+      <li><a href="phrases.html">Phrases</a></li>
+      <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content" role="main">
+    <section class="page-header">
+      <h2>Contact Us</h2>
+      <p>Have questions or feedback? We'd love to hear from you.</p>
+    </section>
+
+    <section class="contact-form-section">
+      <form id="contact-form" action="form-results.html" method="POST" novalidate>
+        <fieldset>
+          <legend>Send us a Message</legend>
+
+          <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required aria-required="true" placeholder="Your full name">
+            <span class="error-message" id="name-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required aria-required="true"
+              placeholder="your.email@example.com">
+            <span class="error-message" id="email-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject *</label>
+            <input type="text" id="subject" name="subject" required aria-required="true" placeholder="Message subject">
+            <span class="error-message" id="subject-error"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Category</label>
+            <select id="category" name="category" aria-label="Message category">
+              <option value="">Select a category</option>
+              <option value="feedback">Feedback</option>
+              <option value="bug">Bug Report</option>
+              <option value="feature">Feature Request</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" required aria-required="true" rows="6"
+              placeholder="Your message here..."></textarea>
+            <span class="error-message" id="message-error"></span>
+          </div>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="subscribe" name="subscribe" aria-label="Subscribe to updates">
+            <label for="subscribe">Subscribe to updates</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; <span id="currentYear"></span> Bilingual Learning Hub | Christian Chukwu | WDD 231</p>
+      <div class="social">
+        <!-- SOCIAL MEDIA ICONS -->
+        <a href="https://www.linkedin.com/in/christian-chukwu-a266201b1" target="_blank" aria-label="LinkedIn"><img
+            src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+        <a href="https://www.facebook.com/Casseylamine" target="_blank" aria-label="Facebook"><img
+            src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+        <a href="https://twitter.com/casseylamine" target="_blank" aria-label="Twitter"><img src="images/twitter.svg"
+            alt="twitter" width="16" height="16"></a>
+        <a href="https://wa.me/2250714630132" target="_blank" aria-label="WhatsApp"><img src="images/whatsapp.svg"
+            alt="whatsapp" width="16" height="16"></a>
+      </div>
+      <p>
+        <a href="attributions.html">Attributions</a> |
+        <a href="https://www.loom.com/share/48923a98cd9648f2a7bf59854f2d6834" target="_blank"
+          rel="noopener noreferrer">Project Video</a>
+      </p>
+      <p>Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+</body>
+
+</html>

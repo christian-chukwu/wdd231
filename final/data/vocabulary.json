@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "word": "Serendipity",
+    "partOfSpeech": "Noun",
+    "definition": "The occurrence and development of events by chance in a happy or beneficial way",
+    "example": "Meeting my best friend was pure serendipity.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 2,
+    "word": "Eloquent",
+    "partOfSpeech": "Adjective",
+    "definition": "Fluent or persuasive in speaking or writing",
+    "example": "The speaker delivered an eloquent presentation on climate change.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 3,
+    "word": "Ephemeral",
+    "partOfSpeech": "Adjective",
+    "definition": "Lasting for a very short time",
+    "example": "Cherry blossoms are ephemeral, blooming only in spring.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 4,
+    "word": "Persevere",
+    "partOfSpeech": "Verb",
+    "definition": "To persist in an undertaking despite difficulty",
+    "example": "She persevered through years of training to become an athlete.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 5,
+    "word": "Meticulous",
+    "partOfSpeech": "Adjective",
+    "definition": "Showing great attention to detail; very careful and precise",
+    "example": "The chef was meticulous about preparing each ingredient.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 6,
+    "word": "Ambiguous",
+    "partOfSpeech": "Adjective",
+    "definition": "Open to more than one interpretation; unclear",
+    "example": "The instructions were ambiguous, causing confusion.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 7,
+    "word": "Benevolent",
+    "partOfSpeech": "Adjective",
+    "definition": "Kind and generous",
+    "example": "The benevolent donor funded the entire school project.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 8,
+    "word": "Ubiquitous",
+    "partOfSpeech": "Adjective",
+    "definition": "Present, appearing, or found everywhere",
+    "example": "Smartphones have become ubiquitous in modern society.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 9,
+    "word": "Pragmatic",
+    "partOfSpeech": "Adjective",
+    "definition": "Dealing with things in a realistic way based on practical consequences",
+    "example": "We need a pragmatic approach to solve this problem.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 10,
+    "word": "Lucid",
+    "partOfSpeech": "Adjective",
+    "definition": "Expressed clearly; easy to understand",
+    "example": "The professor gave a lucid explanation of quantum physics.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 11,
+    "word": "Petulant",
+    "partOfSpeech": "Adjective",
+    "definition": "Childishly sulky or bad-tempered",
+    "example": "His petulant behavior annoyed everyone at the meeting.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 12,
+    "word": "Diligent",
+    "partOfSpeech": "Adjective",
+    "definition": "Having or showing care and effort in one's work or duties",
+    "example": "Her diligent studies helped her pass the exam.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 13,
+    "word": "Anomaly",
+    "partOfSpeech": "Noun",
+    "definition": "Something that deviates from what is standard or expected",
+    "example": "The unusual weather pattern was an anomaly for this season.",
+    "difficulty": "Advanced"
+  },
+  {
+    "id": 14,
+    "word": "Tangible",
+    "partOfSpeech": "Adjective",
+    "definition": "Able to be touched or felt; real or concrete",
+    "example": "We finally saw tangible results from our efforts.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 15,
+    "word": "Nostalgic",
+    "partOfSpeech": "Adjective",
+    "definition": "Sentimental desire to return to a past time",
+    "example": "Looking at old photos made me nostalgic for my childhood.",
+    "difficulty": "Intermediate"
+  },
+  {
+    "id": 16,
+    "word": "Vindicate",
+    "partOfSpeech": "Verb",
+    "definition": "To clear someone of blame or suspicion",
+    "example": "The new evidence helped vindicate the wrongly accused person.",
+    "difficulty": "Advanced"
+  }
+]
