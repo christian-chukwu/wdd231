@@ -10,8 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Get form data from sessionStorage (set during form submission)
   const formDataStr = sessionStorage.getItem('formData');
+  // Try sessionStorage first; if missing (JS disabled earlier), parse URL query params as a fallback
+  if (formDataStr) {
+    try {
+      const formData = JSON.parse(formDataStr);
+      displayFormResults(formData, resultsContent);
+      return;
+    } catch (error) {
+      console.error('Error parsing form data from sessionStorage:', error);
+    }
+  }
 
-  if (!formDataStr) {
+  // Fallback: parse URL query parameters (works when form submits with method=GET)
+  const params = new URLSearchParams(window.location.search);
+  if ([...params.keys()].length === 0) {
     resultsContent.innerHTML = `
       <div class="alert-info" role="alert">
         <p>No form data found. Please <a href="contact.html">submit the contact form</a> first.</p>
@@ -20,18 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
     return;
   }
 
-  try {
-    const formData = JSON.parse(formDataStr);
-    displayFormResults(formData, resultsContent);
+  const fallbackData = {
+    name: params.get('name') || '',
+    email: params.get('email') || '',
+    subject: params.get('subject') || '',
+    category: params.get('category') || '',
+    message: params.get('message') || '',
+    subscribe: params.get('subscribe') === 'on' || params.get('subscribe') === 'true',
+    submittedAt: new Date().toISOString()
+  };
 
-  } catch (error) {
-    console.error('Error parsing form data:', error);
-    resultsContent.innerHTML = `
-      <div class="error-message" role="alert">
-        <p>Error displaying form results. Please try again.</p>
-      </div>
-    `;
-  }
+  displayFormResults(fallbackData, resultsContent);
 });
 
 function displayFormResults(data, container) {
