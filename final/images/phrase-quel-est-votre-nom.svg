@@ -1,0 +1,4 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#FF8C00"/><stop offset="100%" style="stop-color:#FF4500"/></linearGradient></defs>
+  <rect width="400" height="200" fill="url(#g)"/><path d="M 100 120 L 100 50 L 160 40 L 200 50 L 200 120" fill="#FFF" opacity="0.85"/><path d="M 220 120 L 220 60 L 280 35 L 340 60 L 340 120" fill="#FFF" opacity="0.8"/><text x="200" y="180" font-size="14" font-weight="bold" text-anchor="middle" fill="#FFF">Quel est votre nom?</text>
+</svg>

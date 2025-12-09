@@ -27,7 +27,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu+Mono:wght@400&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" media="print" onload="this.media='all'">
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&family=Ubuntu+Mono:wght@400&display=swap"
+      rel="stylesheet">
+  </noscript>
 
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/base.css">
@@ -39,8 +44,11 @@
 <body>
   <header>
     <div class="logo-area">
-      <h1 class="site-title">Bilingual Learning Hub</h1>
-      <p class="site-tagline">Master English & French</p>
+      <img src="images/language_logo.png" alt="Language Learning Logo" class="page-logo">
+      <div class="title-tagline">
+        <h1 class="site-title">Bilingual Learning Hub</h1>
+        <p class="site-tagline">Master English & French</p>
+      </div>
     </div>
 
     <button id="menu-toggle" aria-expanded="false" aria-label="Toggle Navigation Menu">☰</button>

@@ -5,7 +5,8 @@
     "englishTranslation": "Good morning",
     "pronunciation": "bohn mah-TAN",
     "context": "Greeting used in the morning",
-    "category": "Greetings"
+    "category": "Greetings",
+    "image": "images/phrase-bon-matin.svg"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "englishTranslation": "How are you?",
     "pronunciation": "koh-MAHN sah vah",
     "context": "Common greeting to ask how someone is doing",
-    "category": "Greetings"
+    "category": "Greetings",
+    "image": "images/phrase-comment-ca-va.svg"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "englishTranslation": "Pleased to meet you",
     "pronunciation": "ohn-shan-TAY",
     "context": "Polite greeting when meeting someone for the first time",
-    "category": "Greetings"
+    "category": "Greetings",
+    "image": "images/phrase-enchante.svg"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "englishTranslation": "Please (formal)",
     "pronunciation": "see voo PLEH",
     "context": "Formal way to say please in French",
-    "category": "Politeness"
+    "category": "Politeness",
+    "image": "images/phrase-sil-vous-plait.svg"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "englishTranslation": "Thank you very much",
     "pronunciation": "mare-SEE boh-KOO",
     "context": "Expression of gratitude",
-    "category": "Politeness"
+    "category": "Politeness",
+    "image": "images/phrase-merci-beaucoup.svg"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "englishTranslation": "Excuse me",
     "pronunciation": "ek-SKEW-zay-MWAH",
     "context": "Polite way to get someone's attention",
-    "category": "Politeness"
+    "category": "Politeness",
+    "image": "images/phrase-excusez-moi.svg"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "englishTranslation": "I don't understand",
     "pronunciation": "zhuh nuh kohm-PRAHN pah",
     "context": "Used when you don't understand something",
-    "category": "Communication"
+    "category": "Communication",
+    "image": "images/phrase-je-ne-comprends-pas.svg"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "englishTranslation": "Speak more slowly",
     "pronunciation": "par-LAY ploo LAHN-tuh-mahn",
     "context": "Polite request for slower speech",
-    "category": "Communication"
+    "category": "Communication",
+    "image": "images/phrase-parlez-plus-lentement.svg"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "englishTranslation": "What is your name?",
     "pronunciation": "kel eh VOH-truh nohm",
     "context": "Formal way to ask someone's name",
-    "category": "Personal Information"
+    "category": "Personal Information",
+    "image": "images/phrase-quel-est-votre-nom.svg"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "englishTranslation": "My name is...",
     "pronunciation": "zhuh mah-PEL",
     "context": "How to introduce yourself by name",
-    "category": "Personal Information"
+    "category": "Personal Information",
+    "image": "images/phrase-je-mappelle.svg"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "englishTranslation": "Where is the train station?",
     "pronunciation": "oo eh lah gahr",
     "context": "Asking for directions to the train station",
-    "category": "Directions"
+    "category": "Directions",
+    "image": "images/phrase-ou-est-la-gare.svg"
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "englishTranslation": "How much does it cost?",
     "pronunciation": "kohm-BYAN sah KOOT",
     "context": "Common question about price",
-    "category": "Shopping"
+    "category": "Shopping",
+    "image": "images/phrase-combien-ca-coute.svg"
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "englishTranslation": "The bill, please",
     "pronunciation": "lah-dee-SYON see voo PLEH",
     "context": "Polite request for the restaurant bill",
-    "category": "Dining"
+    "category": "Dining",
+    "image": "images/phrase-laddition.svg"
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "englishTranslation": "Welcome",
     "pronunciation": "bee-en-vuh-NEW",
     "context": "Expression used to welcome someone",
-    "category": "Greetings"
+    "category": "Greetings",
+    "image": "images/phrase-bienvenue.svg"
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "englishTranslation": "Have a good day",
     "pronunciation": "bun zhoor-NAY",
     "context": "Farewell phrase used during the day",
-    "category": "Farewell"
+    "category": "Farewell",
+    "image": "images/phrase-bonne-journee.svg"
   },
   {
     "id": 16,
@@ -125,6 +140,7 @@
     "englishTranslation": "Goodbye",
     "pronunciation": "oh ruh-VWAHR",
     "context": "Standard way to say goodbye",
-    "category": "Farewell"
+    "category": "Farewell",
+    "image": "images/phrase-au-revoir.svg"
   }
 ]

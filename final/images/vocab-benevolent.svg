@@ -1,0 +1,13 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#56CCF2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2F80ED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#grad)"/>
+  <circle cx="150" cy="80" r="40" fill="#FFF" opacity="0.8"/>
+  <circle cx="280" cy="110" r="50" fill="#FFF" opacity="0.7"/>
+  <path d="M 200 40 Q 250 80, 200 140" stroke="#FFF" stroke-width="8" fill="none" opacity="0.75"/>
+  <text x="200" y="180" font-size="24" font-weight="bold" text-anchor="middle" fill="#FFF">Benevolent</text>
+</svg>

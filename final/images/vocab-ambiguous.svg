@@ -1,0 +1,12 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF6347;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#grad)"/>
+  <path d="M 80 100 L 150 50 L 220 100 L 150 150 Z" fill="#FFF" opacity="0.8"/>
+  <path d="M 200 100 L 270 50 L 340 100 L 270 150 Z" fill="#FFF" opacity="0.7"/>
+  <text x="200" y="180" font-size="24" font-weight="bold" text-anchor="middle" fill="#FFF">Ambiguous</text>
+</svg>

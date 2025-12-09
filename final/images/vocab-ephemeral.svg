@@ -1,0 +1,13 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F093FB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5576C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="200" fill="url(#grad)"/>
+  <circle cx="100" cy="100" r="35" fill="#FFF" opacity="0.8"/>
+  <circle cx="200" cy="60" r="28" fill="#FFF" opacity="0.7"/>
+  <circle cx="300" cy="110" r="32" fill="#FFF" opacity="0.75"/>
+  <text x="200" y="180" font-size="24" font-weight="bold" text-anchor="middle" fill="#FFF">Ephemeral</text>
+</svg>

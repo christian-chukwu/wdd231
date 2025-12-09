@@ -5,7 +5,8 @@
     "partOfSpeech": "Noun",
     "definition": "The occurrence and development of events by chance in a happy or beneficial way",
     "example": "Meeting my best friend was pure serendipity.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-serendipity.svg"
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Fluent or persuasive in speaking or writing",
     "example": "The speaker delivered an eloquent presentation on climate change.",
-    "difficulty": "Advanced"
+    "difficulty": "Advanced",
+    "image": "images/vocab-eloquent.svg"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Lasting for a very short time",
     "example": "Cherry blossoms are ephemeral, blooming only in spring.",
-    "difficulty": "Advanced"
+    "difficulty": "Advanced",
+    "image": "images/vocab-ephemeral.svg"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "partOfSpeech": "Verb",
     "definition": "To persist in an undertaking despite difficulty",
     "example": "She persevered through years of training to become an athlete.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-persevere.svg"
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Showing great attention to detail; very careful and precise",
     "example": "The chef was meticulous about preparing each ingredient.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-meticulous.svg"
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Open to more than one interpretation; unclear",
     "example": "The instructions were ambiguous, causing confusion.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-ambiguous.svg"
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Kind and generous",
     "example": "The benevolent donor funded the entire school project.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-benevolent.svg"
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Present, appearing, or found everywhere",
     "example": "Smartphones have become ubiquitous in modern society.",
-    "difficulty": "Advanced"
+    "difficulty": "Advanced",
+    "image": "images/vocab-ubiquitous.svg"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Dealing with things in a realistic way based on practical consequences",
     "example": "We need a pragmatic approach to solve this problem.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-pragmatic.svg"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Expressed clearly; easy to understand",
     "example": "The professor gave a lucid explanation of quantum physics.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-lucid.svg"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Childishly sulky or bad-tempered",
     "example": "His petulant behavior annoyed everyone at the meeting.",
-    "difficulty": "Advanced"
+    "difficulty": "Advanced",
+    "image": "images/vocab-petulant.svg"
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Having or showing care and effort in one's work or duties",
     "example": "Her diligent studies helped her pass the exam.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-diligent.svg"
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "partOfSpeech": "Noun",
     "definition": "Something that deviates from what is standard or expected",
     "example": "The unusual weather pattern was an anomaly for this season.",
-    "difficulty": "Advanced"
+    "difficulty": "Advanced",
+    "image": "images/vocab-anomaly.svg"
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Able to be touched or felt; real or concrete",
     "example": "We finally saw tangible results from our efforts.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-tangible.svg"
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "partOfSpeech": "Adjective",
     "definition": "Sentimental desire to return to a past time",
     "example": "Looking at old photos made me nostalgic for my childhood.",
-    "difficulty": "Intermediate"
+    "difficulty": "Intermediate",
+    "image": "images/vocab-nostalgic.svg"
   },
   {
     "id": 16,
@@ -125,6 +140,7 @@
     "partOfSpeech": "Verb",
     "definition": "To clear someone of blame or suspicion",
     "example": "The new evidence helped vindicate the wrongly accused person.",
-    "difficulty": "Advanced"
+    "difficulty": "Advanced",
+    "image": "images/vocab-vindicate.svg"
   }
 ]

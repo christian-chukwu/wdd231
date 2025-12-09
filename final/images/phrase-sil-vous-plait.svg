@@ -1,0 +1,4 @@
+<svg width="400" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#9370DB"/><stop offset="100%" style="stop-color:#6A0DAD"/></linearGradient></defs>
+  <rect width="400" height="200" fill="url(#g)"/><rect x="100" y="50" width="80" height="100" fill="#FFF" opacity="0.8" rx="5"/><rect x="220" y="50" width="80" height="100" fill="#FFF" opacity="0.75" rx="5"/><circle cx="140" cy="85" r="8" fill="#9370DB"/><circle cx="260" cy="85" r="8" fill="#9370DB"/><text x="200" y="180" font-size="16" font-weight="bold" text-anchor="middle" fill="#FFF">S'il vous plaît</text>
+</svg>

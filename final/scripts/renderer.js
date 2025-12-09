@@ -20,7 +20,10 @@ export function renderVocabularyItems(items, container) {
     article.setAttribute('role', 'button');
     article.setAttribute('aria-label', `Vocabulary word: ${item.word}`);
 
+    const imageHtml = item.image ? `<img src="${item.image}" alt="${item.word}" class="vocab-image" loading="lazy">` : '';
+
     article.innerHTML = `
+      ${imageHtml}
       <h3>${item.word}</h3>
       <div class="vocab-meta">
         <span class="category-badge">${item.partOfSpeech}</span>
@@ -55,7 +58,10 @@ export function renderPhraseItems(items, container) {
     article.setAttribute('role', 'button');
     article.setAttribute('aria-label', `French phrase: ${item.phrase}`);
 
+    const imageHtml = item.image ? `<img src="${item.image}" alt="${item.phrase}" class="phrase-image" loading="lazy">` : '';
+
     article.innerHTML = `
+      ${imageHtml}
       <h3>${item.phrase}</h3>
       <div class="vocab-meta">
         <span class="category-badge">${item.category}</span>

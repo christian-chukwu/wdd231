@@ -30,12 +30,29 @@ header {
 .logo-area {
   flex: 1;
   min-width: 200px;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.page-logo {
+  height: 50px;
+  width: auto;
+  max-width: 80px;
+  object-fit: contain;
+}
+
+.title-tagline {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .site-title {
   font-size: 1.5rem;
   margin: 0;
   color: white;
+  display: block;
 }
 
 .site-tagline {
@@ -43,6 +60,7 @@ header {
   font-size: 0.9rem;
   color: white;
   font-style: italic;
+  display: block;
 }
 
 /* Menu Toggle Button */
@@ -224,7 +242,7 @@ nav a:hover {
 
 /* Stats Section */
 .stats {
-  background-color: white;
+  background-color: #e8e8e8;
   padding: 2rem 1rem;
   border-radius: 8px;
   margin-bottom: 2rem;
@@ -233,6 +251,7 @@ nav a:hover {
 
 .stats h2 {
   margin-bottom: 1.5rem;
+  color: #000;
 }
 
 .stats-grid {
@@ -243,7 +262,7 @@ nav a:hover {
 
 .stat-item {
   padding: 1rem;
-  background-color: #f9f9f9;
+  background-color: #d0d0d0;
   border-radius: 8px;
   border: 2px solid var(--text-dark);
 }
@@ -257,12 +276,12 @@ nav a:hover {
 
 .stat-label {
   font-size: 0.9rem;
-  color: #666;
+  color: #000;
 }
 
 /* Page Header */
 .page-header {
-  background-color: #f0f0f0;
+  background-color: #e8e8e8;
   padding: 1.5rem;
   margin-bottom: 2rem;
   border-radius: 8px;
@@ -270,13 +289,13 @@ nav a:hover {
 }
 
 .page-header h2 {
-  color: #003366;
+  color: #000;
   margin-bottom: 0.5rem;
 }
 
 .page-header p {
   margin-bottom: 0;
-  color: #666;
+  color: #000;
 }
 
 /* Filters Section */
@@ -336,6 +355,7 @@ nav a:hover {
   border: 1px solid #ddd;
   cursor: pointer;
   transition: all 0.3s ease;
+  overflow: hidden;
 }
 
 .vocab-item:hover,
@@ -343,6 +363,17 @@ nav a:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   border-color: var(--text-dark);
   transform: translateY(-2px);
+}
+
+/* Vocabulary and Phrase Images */
+.vocab-image,
+.phrase-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #f0f0f0;
 }
 
 .vocab-item h3,
@@ -458,6 +489,15 @@ legend {
 .form-group.checkbox label {
   margin-bottom: 0;
   font-weight: 400;
+}
+
+/* Error Messages - Reserve space to prevent layout shift */
+.error-message {
+  display: block;
+  min-height: 1.2rem;
+  font-size: 0.875rem;
+  color: #d32f2f;
+  margin-top: 0.25rem;
 }
 
 form button[type="submit"] {
